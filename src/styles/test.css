@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.flex-container {
+  display: flex;
+  font-size: 30px;
+  text-align: center;
+}
+ 
+  .flex-item-left {
+    text-align: center;
+    border: 1px solid #e1e1e1;
+    background: white;
+    font-size: 30px;
+    align-items: stretch;
+}
+
+.flex-item-right {
+  text-align: center;
+  border: 1px solid #e1e1e1;
+  background: white;
+  padding: 10px;
+  flex: 50%;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
