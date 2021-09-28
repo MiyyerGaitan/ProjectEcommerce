@@ -1,15 +1,14 @@
-import React, { Fragment, useState } from 'react'
 import ReactDOM from 'react-dom'
-import {BrowserRouter, Switch, Route, NavLink} from "react-router-dom";
-import { Feather, ShoppingCart } from 'react-feather';
-import App from './components/App';
-import {GlobalStyle, Menu, Header, Page, Hamburger} from './components/UiComponents'
-import Burger from "./components/Burger";
+import { createStore } from 'redux';
 import Cart from "./components/Cart";
 import Form from './components/Form';
+import Burger from "./components/Burger";
 import { Provider } from 'react-redux';
-import { createStore } from 'redux';
 import cartReducer from './reducers/cartReducer';
+import React, { useState } from 'react';
+import { Feather, ShoppingCart } from 'react-feather';
+import {BrowserRouter, Switch, Route, NavLink} from "react-router-dom";
+import {GlobalStyle, Menu, Header, Page, Hamburger} from './components/UiComponents'
 
 if (process.env.NODE_ENV === 'production')
     var url = window.location.origin;
